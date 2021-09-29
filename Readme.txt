@@ -1,4 +1,4 @@
-﻿Le prof entre les bonnes réponses et le barême de chaque questions.
+﻿Le prof entre les bonnes réponses de chaque questions.
 
 Ensuite le prof charge cette configuration et entre les réponses des etudiants
 
