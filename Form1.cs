@@ -23,6 +23,7 @@ namespace EnglishProject
             richTextBox1.DragDrop += DragCorrectionText;
             richTextBox2.AllowDrop = true;
             richTextBox2.DragDrop += DragEleveText;
+            ScoreText.Text = "";
         }
 
         public string readfile(String File)
@@ -45,28 +46,78 @@ namespace EnglishProject
 
         private void DragCorrectionText(object sender, DragEventArgs e)
         {
+            int score = 0;
             var data = e.Data.GetData(DataFormats.FileDrop);
             if (data != null)
             {
                 var fileNames = data as string[];
                 if (fileNames.Length > 0)
                 {
-                    richTextBox1.Text += readfile(@fileNames[0]);
+                    richTextBox1.Text = readfile(@fileNames[0]);
                 }
             }
+
+            if (richTextBox2.Text != "")
+            {
+                List<string> stringListProf = richTextBox1.Text.Split('\n').ToList();
+                List<string> stringListEleve = richTextBox2.Text.Split('\n').ToList();
+                if (stringListEleve.Count != stringListProf.Count)
+                {
+                    System.Diagnostics.Debug.WriteLine("Nombre de ligne différent");
+                }
+                else
+                {
+                    for (int i = 0; i < stringListProf.Count - 1; i++)
+                    {
+                        if (stringListEleve[i] == stringListProf[i])
+                        {
+                            score++;
+                        }
+                    }
+                }
+
+            }
+
+            this.ScoreText.Text = score.ToString();
+
         }
 
         private void DragEleveText(object sender, DragEventArgs e)
         {
+            int score = 0;
             var data = e.Data.GetData(DataFormats.FileDrop);
             if (data != null)
             {
                 var fileNames = data as string[];
                 if (fileNames.Length > 0)
                 {
-                    richTextBox2.Text += readfile(@fileNames[0]);
+                    richTextBox2.Text = readfile(@fileNames[0]);
                 }
             }
+
+            if(richTextBox1.Text != "")
+            {
+                List<string> stringListProf = richTextBox1.Text.Split('\n').ToList();
+                List<string> stringListEleve = richTextBox2.Text.Split('\n').ToList();
+                if(stringListEleve.Count != stringListProf.Count)
+                {
+                    System.Diagnostics.Debug.WriteLine("Nombre de ligne différent");
+                }
+                else
+                {
+                    for (int i = 0; i < stringListProf.Count - 1; i++)
+                    {
+                        if (stringListEleve[i] == stringListProf[i])
+                        {
+                            score++;
+                        }
+                    }
+                }
+                
+            }
+
+            this.ScoreText.Text = score.ToString();
+
         }
     }
 }

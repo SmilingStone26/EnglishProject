@@ -28,19 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.ScoreTitre = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.ScoreText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // ScoreTitre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(381, 335);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.ScoreTitre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ScoreTitre.AutoSize = true;
+            this.ScoreTitre.Font = new System.Drawing.Font("Arial Black", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScoreTitre.Location = new System.Drawing.Point(381, 262);
+            this.ScoreTitre.Name = "ScoreTitre";
+            this.ScoreTitre.Size = new System.Drawing.Size(81, 24);
+            this.ScoreTitre.TabIndex = 3;
+            this.ScoreTitre.Text = "Score : ";
+            this.ScoreTitre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // richTextBox1
             // 
@@ -58,14 +63,24 @@
             this.richTextBox2.TabIndex = 5;
             this.richTextBox2.Text = "";
             // 
+            // ScoreText
+            // 
+            this.ScoreText.AutoSize = true;
+            this.ScoreText.Location = new System.Drawing.Point(385, 290);
+            this.ScoreText.Name = "ScoreText";
+            this.ScoreText.Size = new System.Drawing.Size(46, 17);
+            this.ScoreText.TabIndex = 6;
+            this.ScoreText.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ScoreText);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ScoreTitre);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -75,9 +90,10 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ScoreTitre;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Label ScoreText;
     }
 }
 
