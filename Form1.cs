@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -220,6 +221,34 @@ namespace EnglishProject
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (var sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                sfd.FilterIndex = 1;
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(sfd.FileName, richTextBox2.Text);
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (var sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                sfd.FilterIndex = 1;
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    File.WriteAllText(sfd.FileName, richTextBox1.Text);
+                }
+            }
         }
     }
 }
