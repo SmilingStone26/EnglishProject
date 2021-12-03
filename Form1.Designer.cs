@@ -40,11 +40,10 @@
             // 
             // ScoreTitre
             // 
-            this.ScoreTitre.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ScoreTitre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ScoreTitre.AutoSize = true;
             this.ScoreTitre.Font = new System.Drawing.Font("Arial Black", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScoreTitre.Location = new System.Drawing.Point(381, 262);
+            this.ScoreTitre.Location = new System.Drawing.Point(391, 194);
             this.ScoreTitre.Name = "ScoreTitre";
             this.ScoreTitre.Size = new System.Drawing.Size(81, 24);
             this.ScoreTitre.TabIndex = 3;
@@ -53,24 +52,29 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.richTextBox1.Location = new System.Drawing.Point(16, 39);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(363, 399);
+            this.richTextBox1.Size = new System.Drawing.Size(369, 399);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(460, 39);
+            this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox2.Location = new System.Drawing.Point(478, 39);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(328, 399);
+            this.richTextBox2.Size = new System.Drawing.Size(310, 399);
             this.richTextBox2.TabIndex = 5;
             this.richTextBox2.Text = "";
             // 
             // ScoreText
             // 
+            this.ScoreText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ScoreText.AutoSize = true;
-            this.ScoreText.Location = new System.Drawing.Point(385, 290);
+            this.ScoreText.Location = new System.Drawing.Point(405, 227);
             this.ScoreText.Name = "ScoreText";
             this.ScoreText.Size = new System.Drawing.Size(46, 17);
             this.ScoreText.TabIndex = 6;
@@ -78,6 +82,9 @@
             // 
             // checkBox1
             // 
+            this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(16, 12);
             this.checkBox1.Name = "checkBox1";
@@ -89,6 +96,7 @@
             // 
             // checkBox2
             // 
+            this.checkBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox2.AutoSize = true;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.checkBox2.Location = new System.Drawing.Point(690, 12);
@@ -101,9 +109,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(585, 10);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSize = true;
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.Location = new System.Drawing.Point(584, 10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 23);
+            this.button1.Size = new System.Drawing.Size(100, 27);
             this.button1.TabIndex = 9;
             this.button1.Text = "Sauvegarder";
             this.button1.UseVisualStyleBackColor = true;
@@ -111,9 +123,14 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.AutoSize = true;
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.Location = new System.Drawing.Point(117, 10);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 23);
+            this.button2.Size = new System.Drawing.Size(100, 27);
             this.button2.TabIndex = 10;
             this.button2.Text = "Sauvegarder";
             this.button2.UseVisualStyleBackColor = true;
