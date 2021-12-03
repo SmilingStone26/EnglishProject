@@ -40,7 +40,7 @@
             // 
             // ScoreTitre
             // 
-            this.ScoreTitre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ScoreTitre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ScoreTitre.AutoSize = true;
             this.ScoreTitre.Font = new System.Drawing.Font("Arial Black", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScoreTitre.Location = new System.Drawing.Point(391, 194);
@@ -72,7 +72,7 @@
             // 
             // ScoreText
             // 
-            this.ScoreText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.ScoreText.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ScoreText.AutoSize = true;
             this.ScoreText.Location = new System.Drawing.Point(405, 227);
             this.ScoreText.Name = "ScoreText";
@@ -149,6 +149,7 @@
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.ScoreTitre);
+            this.MinimumSize = new System.Drawing.Size(818, 497);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
