@@ -37,6 +37,10 @@ namespace EnglishProject
             System.IO.StreamReader file = new System.IO.StreamReader(File);
             while ((line = file.ReadLine()) != null)
             {
+                for(int i = 0; i<line.Length; i++)
+                {
+                    line = line.ToUpper();
+                }
                 text += line + "\n";
                 counter++;
             }
